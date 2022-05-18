@@ -9,7 +9,8 @@ package pers.jojo.leetcode.problems.b202202;
  **/
 public class OneEditAway {
     public boolean oneEditAway(String first, String second) {
-        if (Math.abs(first.length() - second.length()) > 1) {
+        int abs = Math.abs(first.length() - second.length());
+        if (abs > 1) {
             return false;
         }
         int x = 0;
@@ -27,6 +28,6 @@ public class OneEditAway {
                 break;
             }
         }
-        return Math.min(first.length(), second.length()) - x + Math.abs(first.length() - second.length()) < 2;
+        return Math.min(first.length(), second.length()) - x + abs < 2;
     }
 }

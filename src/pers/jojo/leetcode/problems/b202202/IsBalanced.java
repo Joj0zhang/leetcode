@@ -1,6 +1,8 @@
 package pers.jojo.leetcode.problems.b202202;
 
 
+import pers.jojo.leetcode.problems.TreeNode;
+
 /**
  * @ClassName IsBalanced
  * @Description https://leetcode-cn.com/problems/check-balance-lcci/
@@ -29,15 +31,5 @@ public class IsBalanced {
             return -1;
         }
         return Math.max(leftLength, rightLength) + 1;
-    }
-
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
     }
 }
